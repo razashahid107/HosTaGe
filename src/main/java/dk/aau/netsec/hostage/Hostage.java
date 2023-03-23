@@ -268,6 +268,10 @@ public class Hostage extends Service {
      * @param sender Source where the event took place.
      * @param values Detailed information about the event.
      */
+    // problem exists somewhere here 
+    // Problem Statement 
+    // Taskbar notification does not work reliably. It usually shows when the monitoring is activated for the first time, then disappears when monitoring is deactivated. On subsequent activations it does not reappear again.
+    // Issue 212 on main github 
     public synchronized void notifyUI(String sender, String[] values) {
         createNotification();
         // Send Notification
